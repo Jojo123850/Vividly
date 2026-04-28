@@ -9,10 +9,15 @@
    ---color5:#fff;
 }
 body{
-    max-width:1440px ;
+    max-width:767px ;
     margin: auto;
 }
 
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
  header{
     display: flex;
     justify-content: space-evenly;
@@ -43,6 +48,32 @@ body{
 #burgerMenu{
     display: block;
 }
-a{
+
+
+/* FOOTER */
+footer{
+    margin: auto;
+    background-color: var(---color4);
+    height: 198px;
+
+}
+.header1{
+   font-family: "Shrikhand",sans-serif;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: var(---color5);
+}
+footer div ul li{
+    list-style: none;
+
+}
+
+footer div ul li a {
     text-decoration: none;
+    color: var(---color5);
+    
 }
