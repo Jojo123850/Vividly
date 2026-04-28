@@ -1,12 +1,14 @@
 *{
     margin: 0;
+     padding: 0;
+    box-sizing: border-box;
 }
 :root{
-   ---color1: #252525 ;
-   ---color2: #ff7800 ;
-   ---color3:#ffae00 ;
-   ---color4:#000;
-   ---color5:#fff;
+   --color1: #252525 ;
+   --color2: #ff7800 ;
+   --color3:#ffae00 ;
+   --color4:#000;
+   --color5:#fff;
 }
 body{
     max-width:1440px ;
@@ -18,7 +20,7 @@ a{
 }
 a:hover{
     transition: all 0.5s ease-in-out;
-    color: var(---color2);
+    color: var(--color2);
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
 }
 li{
@@ -26,7 +28,7 @@ li{
 }
 button{
     align-items: center;
-    background-color:var(---color2);
+    background: linear-gradient(to bottom, var(--color2), var(--color3));
     border-radius: 20px;
     padding: 10px;
     border-style: none;
@@ -46,7 +48,7 @@ button{
   
 } 
  #cookie{
-    color: white;
+    color: var(--color5);
     cursor: default;
 } 
 .header0{
@@ -55,23 +57,26 @@ button{
     font-style: Italic;
     font-size: 30px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     vertical-align: middle;
     list-style: none;
     text-align: center;
-    color: var(---color4);
+    color: var(--color4);
 
 }
-
 #burgerMenu{
     display: block;
 }
+nav{
+    display: none;
+    
+}
+
 
 /* SECTION 1 */
 #section1{
     background-color: #ffae00;
-    height: 254px;
 }
 #section1 div{
     padding: 30px 15px;
@@ -79,10 +84,9 @@ button{
 #section1 h2{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: Bold;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     vertical-align: middle;
 
@@ -90,10 +94,9 @@ button{
 #section1 p{
     font-family: "Roboto", sans-serif;
     font-weight: 300;
-    font-style: Light;
     font-size: 15px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     vertical-align: middle;
     padding-top: 10px;
@@ -106,7 +109,7 @@ button{
     align-items: center;
 }
 #section1 input{
-    background-color:var(---color3);
+    background-color:var(--color3);
     border-radius:20px ;
     border: 1px solid;
     box-shadow:0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -122,79 +125,106 @@ button{
     font-family: "Inter", sans-serif;
     font-size: 15.13px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
-    color: var(---color4);
+    color: var(--color4);
   
 
 }
 
 /* SECTION 2 */
 #section2{
-    width: 100%;
+    /* width: 100%; */
     max-width: 1440px;
     margin: auto;
     /* height: 271px; */
+    margin: 10px;
 }
 #section2 h2{
     font-family: "Roboto",sans-serif;
     font-weight: 700;
-    font-style: Bold;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
     padding-top: 40px;
 
 }
 
 #section2 li{
-     max-width: 400px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* width: 100%;
+    max-width: 600px; */
+    margin: 10px auto;
     margin-bottom: 10px;
-    box-shadow:0px 4px 15px rgba(0, 0, 0, 0.15) ;
-    border-style: none;
+    box-shadow:0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
     padding: 20px;
-    width: 100%;
 }
+
 #section2 ul{
-      padding-bottom: 40px;
+    padding-left: 0;
+    margin: 0;
+    padding-bottom: 40px;
 }
 #section2 a{
     position: relative;
-    border-color: var(---color5);
-    color: var(---color4);
+    border-color: var(--color5);
+    color: var(--color4);
     font-family: "Roboto",sans-serif;
     font-weight: 500;
-    font-style: Medium;
     font-size: 16px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
 
 } 
 #section2 span{
-    position: absolute;
-    border-radius: 12.02px;
-    border-color: var(---color2);
-    background-color: var(---color2);
-    color: var(---color5);
-    left: 35px;
-    padding: 8px;
-    font-size: 16px;
+    background-color: var(--color2);
+    color: var(--color5);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* SECTION 3 */
 #section3{
     max-width: 1440px;
     margin: auto;
-    background-color: var(---color3);
+    background-color: var(--color3);
+    
+}
+#div1{
+    /* display: grid;
+    grid-template-columns: 1fr; */
+  display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+#section3 h2{
+    padding-left: 20px;
+    padding-top: 40px;
 }
 #section3 article{
     border-radius: 20px;
     height: auto;
-    background-color: var(---color5);
-    margin: 20px;
+    background-color: var(--color5);
+}
+#section3 article form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+#section3 article form p{
+    margin: 0;
 }
 #section3 img{
     width: 100%;
@@ -203,18 +233,52 @@ button{
    border-top-left-radius: 20px;
    border-top-right-radius:20px
 }
-input{
+input[type="checkbox"]{
     display: none;
+}
+
+input[type="checkbox"]:checked + label img {
+    content: url('../img/like2.svg');
 }
 label{
     width: 20px;
     height: 20px;
 }
+#section3 .div2{
+    padding-left: 10px;
+    padding-top: 20px;
+}
+#section3 h3{
+    font-family: "Roboto",sans-serif;;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: var(--color4);
+
+
+}
+#section3 p{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: var(--color1);
+
+}
+hr{
+    border: none;
+    height: 2px;
+    background-color: var(--color2);
+    margin-top: 20px;
+}
 
 /* FOOTER */
 footer{
     margin: auto;
-    background-color: var(---color4);
+    background-color: var(--color4);
     height: 198px;
 
 }
@@ -228,9 +292,9 @@ footer div{
     font-style: Italic;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     vertical-align: middle;
-    color: var(---color5);
+    color: var(--color5);
     padding-left: 35px;
     padding-bottom: 30px;
 }
@@ -241,6 +305,42 @@ footer div ul li{
 
 footer div ul li a {
     text-decoration: none;
-    color: var(---color5);
+    color: var(--color5);
     
+}
+
+ @media screen and (min-width:768px) {
+   #div1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+
+    
+} 
+@media screen and (min-width: 1024px) {
+    #div1 {
+        grid-template-columns: 1fr 1fr;
+    }
+    #burgerMenu{
+    display: none;
+}
+nav{
+    display: block;
+}
+    nav ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+    }
+nav ul li{
+    font-family: "Roboto",sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: var(--color4);
+
+}
 }
