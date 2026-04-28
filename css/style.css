@@ -206,9 +206,9 @@ button{
 input{
     display: none;
 }
-.pouce{
-    width: 20%;
-    height: 20%;
+label{
+    width: 20px;
+    height: 20px;
 }
 
 /* FOOTER */
