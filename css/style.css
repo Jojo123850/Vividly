@@ -144,6 +144,7 @@ button{
     line-height: 100%;
     letter-spacing: 0%;
     vertical-align: middle;
+    padding-top: 40px;
 
 }
 
@@ -155,6 +156,9 @@ button{
     border-radius: 8px;
     padding: 20px;
     width: 100%;
+}
+#section2 ul{
+      padding-bottom: 40px;
 }
 #section2 a{
     position: relative;
