@@ -184,6 +184,33 @@ button{
     font-size: 16px;
 }
 
+/* SECTION 3 */
+#section3{
+    max-width: 1440px;
+    margin: auto;
+    background-color: var(---color3);
+}
+#section3 article{
+    border-radius: 20px;
+    height: auto;
+    background-color: var(---color5);
+    margin: 20px;
+}
+#section3 img{
+    width: 100%;
+    display: block; 
+    object-fit: cover;
+   border-top-left-radius: 20px;
+   border-top-right-radius:20px
+}
+input{
+    display: none;
+}
+.pouce{
+    width: 20%;
+    height: 20%;
+}
+
 /* FOOTER */
 footer{
     margin: auto;
