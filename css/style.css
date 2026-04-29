@@ -1,6 +1,6 @@
 *{
     margin: 0;
-     padding: 0;
+     /* padding: 0; */
     box-sizing: border-box;
 }
 :root{
@@ -198,11 +198,35 @@ nav{
     max-width: 1440px;
     margin: auto;
     background-color: var(--color3);
+    padding: 30px 15px;
     
 }
+#section3 article:nth-child(1):after,
+#section3 article:nth-child(2):after{
+    position: absolute;
+    content: "new!";
+    left: -8px;
+    top:18px;
+    font-family: "Shrikhand",sans-serif;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    transform: rotate(317deg);
+    color: var(--color5);
+    border: var(--color3);
+    border-color: var(--color2);
+    background-color: var(--color2);
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+}
 #div1{
-    /* display: grid;
-    grid-template-columns: 1fr; */
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
@@ -213,6 +237,7 @@ nav{
     padding-top: 40px;
 }
 #section3 article{
+    position: relative;
     border-radius: 20px;
     height: auto;
     background-color: var(--color5);
@@ -231,8 +256,18 @@ nav{
     display: block; 
     object-fit: cover;
    border-top-left-radius: 20px;
-   border-top-right-radius:20px
+   border-top-right-radius:20px;
+  
 }
+/* .new0{
+    position: absolute;
+    background: linear-gradient(to bottom, var(--color2), var(--color3));
+    border-radius: 20px;
+    padding: 10px;
+    border-style: none;
+
+    
+} */
 input[type="checkbox"]{
     display: none;
 }
@@ -283,6 +318,7 @@ footer{
 
 }
 footer div{
+    display: grid;
     align-items: center;
     padding-top: 40px;
 }
@@ -342,5 +378,18 @@ nav ul li{
     vertical-align: middle;
     color: var(--color4);
 
+}
+footer div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+footer ul{
+    display: flex;
+    gap: 20px;
+}
+footer .header1{
+    padding-bottom: 0;
 }
 }
