@@ -259,6 +259,7 @@ img{
    border-top-right-radius:20px;
   
 }
+
 input[type="checkbox"]{
     display: none;
 }
@@ -300,6 +301,8 @@ hr{
     background-color: var(--color2);
     margin-top: 20px;
 }
+
+
 
 /* FOOTER */
 footer{

@@ -1,6 +1,5 @@
 *{
     margin: 0;
-     /* padding: 0; */
     box-sizing: border-box;
 }
 :root{
@@ -41,10 +40,13 @@ button{
 /* HEADER */
  header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    position: relative;
     gap: 50px;
     align-items: center;
     padding: 20px;
+    height: 74px;
+
   
 } 
  #cookie{
@@ -63,6 +65,7 @@ button{
     list-style: none;
     text-align: center;
     color: var(--color4);
+   
 
 }
 #burgerMenu{
@@ -95,14 +98,19 @@ nav{
 .div2{
     margin: 20px;
 }
-img{
+.imagsec1{
     width: 100%;
     height: 363px;
     display: block; 
     object-fit: cover;
   
 }
+.pouce{
+    width: 100%;
+    display: block; 
+    object-fit: cover;
 
+}
 input[type="checkbox"]{
     display: none;
 }
@@ -114,25 +122,40 @@ label{
     width: 20px;
     height: 20px;
 }
-h3{
+h2{
+  font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: var(--color4);
+    padding: 10px;
+
+
+
+}
+
+/* h3{
     font-family: "Roboto",sans-serif;;
     font-size: 18px;
     line-height: 100%;
     letter-spacing: 0;
     vertical-align: middle;
     color: var(--color4);
-    text-align: center;
 
 
-}
+} */
+
  p{
     font-family: "Roboto",sans-serif;
     font-weight: 300;
     font-size: 15px;
     line-height: 100%;
-    letter-spacing: 0;
+    letter-spacing: 0%;
     vertical-align: middle;
     color: var(--color1);
+    padding: 10px;
 
 }
 hr{
@@ -140,8 +163,19 @@ hr{
     height: 2px;
     background-color: var(--color2);
     margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
+/* SECTION2*/
+#section2{
+    max-width: 990px;
+    margin: auto;
+border: 1px solid;
+border-color: var(--color2);
+border-left: none;
+border-right: none;
+}
 /* FOOTER */
 footer{
     margin: auto;
@@ -187,6 +221,12 @@ footer div ul li a {
     
 } 
 @media screen and (min-width: 1024px) {
+    .header0{
+    position: absolute;
+    transform: translateX(60%);
+    top: 17px;
+    }
+    
     #div1 {
         grid-template-columns: 1fr 1fr;
     }
