@@ -343,6 +343,7 @@ nav{
         display: flex;
         gap: 20px;
         list-style: none;
+      
     }
 nav ul li{
     font-family: "Roboto",sans-serif;
@@ -353,6 +354,9 @@ nav ul li{
     vertical-align: middle;
     color: var(--color4);
 
+}
+nav a{
+      color: var(--color4)
 }
 footer div{
     display: flex;

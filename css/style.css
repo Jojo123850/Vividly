@@ -36,6 +36,7 @@ button{
     width: fit-content;
     justify-self: center;
     margin-top: 20px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* HEADER */
@@ -45,7 +46,7 @@ button{
     gap: 50px;
     align-items: center;
     padding: 20px;
-  
+    position: relative;
 } 
  #cookie{
     color: var(--color5);
@@ -352,6 +353,11 @@ footer div ul li a {
     
 } 
 @media screen and (min-width: 1024px) {
+        .header0{
+    position: absolute;
+    transform: translateX(60%);
+    top: 17px;
+    }
     #div1 {
         grid-template-columns: 1fr 1fr;
     }
@@ -375,6 +381,9 @@ nav ul li{
     vertical-align: middle;
     color: var(--color4);
 
+}
+nav a{
+      color: var(--color4)
 }
 footer div{
     display: flex;
