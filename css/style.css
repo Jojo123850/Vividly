@@ -119,7 +119,7 @@ nav{
     max-width: 500px;
     justify-content: center;
     margin-top: 20px;
-    width: stretch;
+    width: 100%;
   
 }
 ::placeholder{
@@ -155,13 +155,15 @@ nav{
     display: flex;
     align-items: center;
     gap: 15px;
-    /* width: 100%;
-    max-width: 600px; */
     margin: 10px auto;
     margin-bottom: 10px;
     box-shadow:0px 4px 15px rgba(0, 0, 0, 0.15);
     border-radius: 8px;
-    padding: 20px;
+     padding: 20px 20px 20px 40px;
+      position: relative; 
+    display: flex;
+    align-items: center;
+    padding: 20px 20px 20px 40px;
 }
 
 #section2 ul{
@@ -182,6 +184,9 @@ nav{
 
 } 
 #section2 span{
+    position: absolute;
+    left: -15px; 
+    
     background-color: var(--color2);
     color: var(--color5);
     border-radius: 50%;
@@ -309,38 +314,40 @@ hr{
 
 
 /* FOOTER */
-footer{
-    margin: auto;
+footer {
     background-color: var(--color4);
     height: 198px;
 
-}
-footer div{
-    display: grid;
+    display: flex;
     align-items: center;
-    padding-top: 40px;
-}
-.header1{
-   font-family: "Shrikhand",sans-serif;
-    font-weight: 400;
-    font-style: Italic;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0;
-    vertical-align: middle;
-    color: var(--color5);
-    padding-left: 35px;
-    padding-bottom: 30px;
-}
-footer div ul li{
-    list-style: none;
-
+    padding: 20px;
+   
 }
 
-footer div ul li a {
-    text-decoration: none;
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    gap: 20px;
+}
+
+.header1 {
+    font-family: "Shrikhand", sans-serif;
+    margin: 0;
+    line-height: 1;
     color: var(--color5);
-    
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    width: 100%;
+}
+
+footer ul li a {
+    color: var(--color5);
 }
 
  @media screen and (min-width:768px) {
@@ -385,17 +392,19 @@ nav ul li{
 nav a{
       color: var(--color4)
 }
-footer div{
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+footer{
+     justify-content: center;
 }
-footer ul{
-    display: flex;
-    gap: 20px;
+  footer div {
+        flex-direction: row;      
+        align-items: baseline;   
+        justify-content: center;
+        gap: 40px;
+    }
+
+    footer ul {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
-footer .header1{
-    padding-bottom: 0;
-}
-}
+
