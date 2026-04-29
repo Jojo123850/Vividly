@@ -1,7 +1,7 @@
 *{
     margin: 0;
-     /* padding: 0; */
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 :root{
    --color1: #252525 ;
@@ -134,10 +134,9 @@ nav{
 
 /* SECTION 2 */
 #section2{
-    /* width: 100%; */
+
     max-width: 1440px;
     margin: auto;
-    /* height: 271px; */
     margin: 10px;
 }
 #section2 h2{
@@ -258,6 +257,10 @@ img{
    border-top-left-radius: 20px;
    border-top-right-radius:20px;
   
+  
+}
+.imagsec3{
+     height: 249px;
 }
 
 input[type="checkbox"]{
