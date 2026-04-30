@@ -360,11 +360,7 @@ footer ul li a {
     
 } 
 @media screen and (min-width: 1024px) {
-        .header0{
-    position: absolute;
-    transform: translateX(60%);
-    top: 17px;
-    }
+    
     #div1 {
         grid-template-columns: 1fr 1fr;
     }
