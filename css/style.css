@@ -14,6 +14,34 @@ body{
     max-width:1440px ;
     margin: auto;
 }
+.load0{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color3);
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    animation: hideLoader 5s forwards ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@keyframes hideLoader{to{
+    opacity: 0;
+    visibility: hidden;
+}}
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid lightblue;
+  border-right-color: orange;
+  animation: l2 1s infinite linear;
+}
+@keyframes l2 {to{transform: rotate(1turn)}}
 
 a{
     text-decoration: none;
@@ -47,6 +75,7 @@ button{
     align-items: center;
     padding: 20px;
     position: relative;
+    height: 74px;
 } 
  #cookie{
     color: var(--color5);
@@ -138,7 +167,7 @@ nav{
 
     max-width: 1440px;
     margin: auto;
-    margin: 10px;
+    margin: 20px;
 }
 #section2 h2{
     font-family: "Roboto",sans-serif;
@@ -235,11 +264,18 @@ nav{
   display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 #section3 h2{
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
     padding-left: 20px;
     padding-top: 40px;
+
 }
  article{
     position: relative;
@@ -320,7 +356,7 @@ footer {
 
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
    
 }
 
@@ -360,6 +396,11 @@ footer ul li a {
     
 } 
 @media screen and (min-width: 1024px) {
+    .header0{
+    position: absolute;
+    transform: translateX(60%);
+    top: 17px;
+    }
     
     #div1 {
         grid-template-columns: 1fr 1fr;
